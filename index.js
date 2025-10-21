@@ -34,4 +34,5 @@ app.get("/Gsearch", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("✅ Image API is running on port 3000"));
+// ✅ Listen on Render's assigned port
+app.listen(process.env.PORT || 3000, () => console.log("API running"));
